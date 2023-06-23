@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>File Converter</title>
+  <link rel="stylesheet" type="text/css" href="filecon.css">
+</head>
+<body>
+  <header>
+    <h1>File Converter</h1>
+  </header>
+
+  <section class="converter">
+    <label for="fileInput">Select a file:</label>
+    <input type="file" id="fileInput">
+
+    <label for="formatSelect">Select output format:</label>
+    <select id="formatSelect">
+      <option value="pdf">PDF</option>
+      <option value="jpg">JPG</option>
+      <option value="png">PNG</option>
+    </select>
+
+    <button id="convertButton">Convert</button>
+  </section>
+
+  <section class="result">
+    <h2>Result:</h2>
+    <div id="resultBox"></div>
+  </section>
+
+  <script src="filecon.js"></script>
+</body>
+</html>
